@@ -1,0 +1,46 @@
+<html>
+<head>
+<body>
+<script>
+	var n = parseInt(window.prompt("enter n value",""));
+	var a = new Array(n);
+	var key;
+	for(var i=0;i<a.length;i++)
+	a[i]=parseInt(window.prompt("enter array"));
+	for(var i=0;i<a.length;i++)
+	{
+		for(var j=i+1;j<a.length;j++)
+		{
+			if(a[i]>a[j])
+			{
+				temp=a[i];
+				a[i]=a[j];
+				a[j]=temp;
+			}
+		}
+	}
+	key=parseInt(window.prompt("enter key"));
+	i=0;j=a.length-1;
+	do
+	{
+		mid=parseInt((i+j)/2);
+		if(a[mid]==key)
+		{
+			document.write("element found");
+			break;
+		}
+		else if(a[mid]>key)
+			j=mid-1;
+		else
+			i=mid+1;
+	}
+	while(i<=j);
+		if(i>j)
+		{
+			document.write("element not found");
+		}
+
+	</script>
+	</head>
+	</body>
+</html>

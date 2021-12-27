@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>color change</title>
+</head>
+<body>
+<form>
+color<select name="colors" id="t1">
+<option value="green">green</option>
+<option value="red">red</option>
+<option value="blue">blue</option>
+<option value="yellow">yellow</option>
+</select><br><br>
+size<select name="size" id="t2">
+<option value="30%">30%</option>
+<option value="40%">40%</option>
+<option value="80%">80%</option>
+<option value="200%">200%</option>
+</select><br><br>
+<textarea name="message" rows="10" cols="10" id="t3">
+welcome to rvr
+</textarea><br>
+<br>
+<button type="button" onclick="ok()">ok</button><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+<script>
+function ok()
+{
+	x=document.getElementById("t3");
+	y=document.getElementById("t1");
+	z=document.getElementById("t2");
+	x.style.color=y.value;
+	x.style.fontSize=z.value;
+}
+</script>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Digital Clock</title>
+</head>
+<body onload="displayclk()">
+<h1 id="text"><h1>
+</body>
+<script>
+function displayclk()
+{
+var d=new Date();
+var hh=d.getHours();
+var mm=d.getMinutes();
+var ss=d.getSeconds();
+x = document.getElementById("text");
+x.innerHTML=hh+":"+mm+":"+ss;
+}
+function interval()
+{
+setInterval(displayclk,1000);
+}
+interval();
+</script>
+</html>

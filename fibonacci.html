@@ -1,0 +1,32 @@
+<html>
+<head>
+<body>
+<script language="JAVASCRIPT" type="TEXT/JAVASCRIPT">
+	
+	function fib(n)
+	{
+		if(n==1||n==0)
+		return 1;
+		else
+		return fib(n-1)+fib(n-2);
+	}
+
+</script>
+<script>
+var n,f;
+n = parseInt(window.prompt("Enter a number"));
+document.writeln("The fibonacci numbers are<br>");
+for(i=0;i<n;i++)
+{
+	f=fib(i);
+	document.writeln(f+"<br>");
+}
+
+	
+	
+</script>
+
+	</script>
+	</head>
+	</body>
+</html>
